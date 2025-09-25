@@ -1,4 +1,36 @@
-{% extends "base.html" %} {%block title %} Home Page {% endblock %} 
-{% block content %}
-<p>Testing</p>
-{% endblock %}
+{% extends 'base.html' %}
+<!-- Required Static Tags -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homepage of ortfolio website showcasing Amber Czerwinski.">
+    <meta name="keywords" content="amber,czerwinski,portfolio,resume,python,django">
+    
+    <title>Homepage</title>
+</head>
+<body>
+    {% block content %}
+    <div class="d-flex justify-content-evenly align-items-center">
+        <div>
+            <h1>I am Amber Czerwinski!</h1>
+            <p>A back-end developer by profession, and a full-stack developer at heart. 
+                I am passionate about writing clean, efficient, and maintable code that
+                meets real-world requirements and exceeds delivery expectations.
+            </p>
+        </div>
+        <div><img src="{% static 'images/self-image.png' %}" class="img-fluid" alt="portrait" width="1000px" height="1000px"></div>
+        <div>
+            <h1>Code that scales. Design that performs.</h1>
+            <p>I primarily work with Python/Python3, but I also enjoy building with Java and Scala.
+                I specialize in object-oriented programming, and develop across both Windows and Linux/Unix environments.
+                Professionally, I have also integrated AWS cloud services to support in building and maintaining scalable, cloud-ready applications"
+            </p>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

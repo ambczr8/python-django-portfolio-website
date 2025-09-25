@@ -7,3 +7,4 @@
 * Create Directory: `python3 manage.py startapp <app_name>`
 * Create Starter Django Project Structure: `python3 -m django startproject <project_name`
 * Install Django: `pip3 install django`
+* Request static files: `python3 manage.py collectstatic`

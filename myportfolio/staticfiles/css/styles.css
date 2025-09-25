@@ -1,0 +1,4 @@
+/* Homepage Grid Layout CSS --> */
+.two-column-grid {
+  grid-template-columns: 1fr 1fr;
+}
