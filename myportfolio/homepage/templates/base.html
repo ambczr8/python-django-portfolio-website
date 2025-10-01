@@ -6,35 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio website showcasing Amber Czerwinski.">
     <meta name="keywords" content="amber,czerwinski,portfolio,resume,python,django">
+    <!-- Required for Formatting-->
+    {% spaceless %}
+    <!-- Required Static Tags -->
+    {% load static %}
     <!-- Bootstrap CSS -->
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW"
         crossorigin="anonymous">
+    <!-- Required Custom CSS File -->
+    <link rel="stylesheet" 
+        href="{% static 'css/styles.css' %}">
     <title>Homepage</title>
-    <!-- Required for Formatting-->
-    {% spaceless %}
-    <!-- Required Static Tags -->
-    {% load static %}
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
-    <!-- Custom CSS to apply the font-->
-    <style>
-    body {
-      font-family: "Sour Gummy", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 100;
-      font-style: normal;
-      font-variation-settings: "wdth" 100;
-      font-size: 34px;
-    }
-    </style>
-
-    <!-- Required Custom CSS File -->
-     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
   </head>
     <body>
       <nav class="navbar navbar-expand-lg bg-warning py-4">
