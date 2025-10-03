@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+<!-- Required Static Tag -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skills page of portfolio website showcasing Amber Czerwinski.">
+    <meta name="keywords" content="amber,czerwinski,portfolio,skills,python,django,html,css">
+    <!-- Page Title -->
+    <title>Skills page</title>
+</head>
+<body>
+    {% block content %}
+    <div class="card" custom-card">
+        <img src="..." class="card-img-top" alt="..." width="100px" height="100px">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
