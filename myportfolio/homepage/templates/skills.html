@@ -15,20 +15,18 @@
 <body>
     {% block content %}
     <div class="container-fluid my-4 mx-4">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-lg-xl-3 row-cols-xxl-3 g-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-lg-xl-4 row-cols-xxl-4 g-4">
 
             <!-- Card 1: Programming Languages -->
             <div class="col">
-                <div class="card h-100 text-center">
+                <div class="card text-center">
                     <img src="..." class="card-img-top" alt="..." width="200" height="200">
-                    <div class="card-body">
-                        <h5 class="card-title">Programming Languages</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
+                    <h5 class="card-title mt-3">Programming Languages</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">Python</li>
+                        <li class="list-group-item">Java</li>
+                        <li class="list-group-item">Scala</li>
+                        <li class="list-group-item">SQL</li>                                                                                                                           
                     </ul>
                 </div>
             </div>
@@ -37,14 +35,13 @@
             <div class="col">
                 <div class="card h-100 text-center">
                     <img src="..." class="card-img-top" alt="..." width="200" height="200">
-                    <div class="card-body">
-                        <h5 class="card-title">Web & Frameworks</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
+                    <h5 class="card-title mt-3">Web & Frameworks</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">HTML</li>
+                        <li class="list-group-item">CSS</li>
+                        <li class="list-group-item">Django</li>
+                        <li class="list-group-item">React</li>
+                        <li class="list-group-item">PHP</li>
                     </ul>
                 </div>
             </div>
@@ -53,46 +50,48 @@
             <div class="col">
                 <div class="card h-100 text-center">
                     <img src="..." class="card-img-top" alt="..." width="200" height="200">
-                    <div class="card-body">
-                        <h5 class="card-title">Cloud & Infrastructure</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
+                    <h5 class="card-title mt-3">Cloud & Infrastructure</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">AWS Services (Lambda, CloudFormation, RDS, S3, CloudFront,
+                            EKS, CloudWatch, Step Functions, API Gateway, Glue, EC2, ECS, EKS, EMR)
+                        </li>
+                        <li class="list-group-item">Kubernetes</li>
+                        <li class="list-group-item">CI/CD Pipelines</li>
+                         <li class="list-group-item">Hadoop</li>                       
                     </ul>
                 </div>
             </div> 
 
-            <!-- Card 4: Data & Databases -->
+            <!-- Card 4: Data Engineering & Databases -->
             <div class="col">
                 <div class="card h-100 text-center">
                     <img src="..." class="card-img-top" alt="..." width="200" height="200">
-                    <div class="card-body">
-                        <h5 class="card-title">Data & Databases</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
+                    <h5 class="card-title mt-3">Data Engineering & Databases</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">NoSQL (MongoDB, DynamoDB)</li>
+                        <li class="list-group-item">Snowflake</li>
+                        <li class="list-group-item">Spark</li>                                              
+                        <li class="list-group-item">DDL</li>
+                        <li class="list-group-item">JSON</li>
+                        <li class="list-group-item">YAML</li>                        
                     </ul>
                 </div>
             </div>
 
-            <!-- Card 5: APIs & Tools -->
+            <!-- Card 5: APIs & Development Tools -->
             <div class="col">
                 <div class="card h-100 text-center">
                     <img src="..." class="card-img-top" alt="..." width="200" height="200">
-                    <div class="card-body">
-                        <h5 class="card-title">APIs and Tools</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
+                    <h5 class="card-title mt-3">APIs and Development Tools</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">RESTful APIs</li>
+                        <li class="list-group-item">Postman</li>
+                        <li class="list-group-item">Spring Boot</li>
+                        <li class="list-group-item">Jupyter</li>
+                        <li class="list-group-item">Visual Studio Code</li>
+                        <li class="list-group-item">Eclipse</li>
+                         <li class="list-group-item">IntelliJ IDEA</li>
+                        <li class="list-group-item">Spyder</li>                                                                                                                     
                     </ul>
                 </div>
             </div>
@@ -101,18 +100,42 @@
             <div class="col">
                 <div class="card h-100 text-center">
                     <img src="..." class="card-img-top" alt="..." width="200" height="200">
-                    <div class="card-body">
-                        <h5 class="card-title">Collaboration & Testing</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
+                    <h5 class="card-title mt-3">Collaboration</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">Git</li>
+                        <li class="list-group-item">Bitbucket</li>
+                        <li class="list-group-item">Jira</li>
+                        <li class="list-group-item">Confluence</li>
+                        <li class="list-group-item">ServiceNow</li>                                                                                        
+                    </ul>
+                </div>
+            </div>
+            <!-- Card 7: Testing -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="..." class="card-img-top" alt="..." width="200" height="200">
+                    <h5 class="card-title mt-3">Testing</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">Pytest</li>
+                        <li class="list-group-item">Unittest</li>
+                        <li class="list-group-item">Integration Testing</li>
+                        <li class="list-group-item">Regression Testing</li>                                                                                       
+                    </ul>
+                </div>
+            </div>
+            <!-- Card 8: Visualization -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="..." class="card-img-top" alt="..." width="200" height="200">
+                    <h5 class="card-title mt-3">Visualization</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">Tableau</li>
+                        <li class="list-group-item">MS Office Services</li>                                                                                    
                     </ul>
                 </div>
             </div>
         </div>
+    </div>
     {% endblock %}
 </body>
 </html>
