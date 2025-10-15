@@ -14,13 +14,13 @@
 </head>
 <body>
     {% block content %}
-    <div class="container-fluid my-4 mx-4">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-lg-xl-4 row-cols-xxl-4 g-4">
+    <div class="container-fluid py-4 px-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-lg-xl-4 row-cols-xxl-4 g-4">
 
             <!-- Card 1: Programming Languages -->
             <div class="col">
                 <div class="card text-center">
-                    <img src="..." class="card-img-top" alt="..." width="200" height="200">
+                    <img src="{% static 'images/programming.svg' %}" class="card-img-top" alt="..." width="200" height="200">
                     <h5 class="card-title mt-3">Programming Languages</h5>
                     <ul class="list-group list-group-flush flex-grow-1">
                         <li class="list-group-item">Python</li>
@@ -33,8 +33,8 @@
 
             <!-- Card 2: Web & Frameworks -->
             <div class="col">
-                <div class="card h-100 text-center">
-                    <img src="..." class="card-img-top" alt="..." width="200" height="200">
+                <div class="card text-center">
+                    <img src="{% static 'images/web-developer.svg' %}" class="card-img-top" alt="..." width="200" height="200">
                     <h5 class="card-title mt-3">Web & Frameworks</h5>
                     <ul class="list-group list-group-flush flex-grow-1">
                         <li class="list-group-item">HTML</li>
@@ -48,8 +48,8 @@
 
             <!-- Card 3: Cloud & Infrastructure -->
             <div class="col">
-                <div class="card h-100 text-center">
-                    <img src="..." class="card-img-top" alt="..." width="200" height="200">
+                <div class="card text-center">
+                    <img src="{% static 'images/cloud-hosting.svg' %}" class="card-img-top" alt="..." width="200" height="200">
                     <h5 class="card-title mt-3">Cloud & Infrastructure</h5>
                     <ul class="list-group list-group-flush flex-grow-1">
                         <li class="list-group-item">AWS Services (Lambda, CloudFormation, RDS, S3, CloudFront,
@@ -64,8 +64,8 @@
 
             <!-- Card 4: Data Engineering & Databases -->
             <div class="col">
-                <div class="card h-100 text-center">
-                    <img src="..." class="card-img-top" alt="..." width="200" height="200">
+                <div class="card text-center">
+                    <img src="{% static 'images/spreadsheet.svg' %}" class="card-img-top" alt="..." width="200" height="200">
                     <h5 class="card-title mt-3">Data Engineering & Databases</h5>
                     <ul class="list-group list-group-flush flex-grow-1">
                         <li class="list-group-item">NoSQL (MongoDB, DynamoDB)</li>
@@ -80,8 +80,8 @@
 
             <!-- Card 5: APIs & Development Tools -->
             <div class="col">
-                <div class="card h-100 text-center">
-                    <img src="..." class="card-img-top" alt="..." width="200" height="200">
+                <div class="card text-center">
+                    <img src="{% static 'images/development.svg' %}" class="card-img-top" alt="..." width="200" height="200">
                     <h5 class="card-title mt-3">APIs and Development Tools</h5>
                     <ul class="list-group list-group-flush flex-grow-1">
                         <li class="list-group-item">RESTful APIs</li>
@@ -96,10 +96,10 @@
                 </div>
             </div>
 
-            <!-- Card 6: Collaboration & Testing -->
+            <!-- Card 6: Collaboration-->
             <div class="col">
-                <div class="card h-100 text-center">
-                    <img src="..." class="card-img-top" alt="..." width="200" height="200">
+                <div class="card text-center">
+                    <img src="{% static 'images/collaboration.svg' %}" class="card-img-top" alt="..." width="200" height="200">
                     <h5 class="card-title mt-3">Collaboration</h5>
                     <ul class="list-group list-group-flush flex-grow-1">
                         <li class="list-group-item">Git</li>
@@ -112,8 +112,8 @@
             </div>
             <!-- Card 7: Testing -->
             <div class="col">
-                <div class="card h-100 text-center">
-                    <img src="..." class="card-img-top" alt="..." width="200" height="200">
+                <div class="card text-center">
+                    <img src="{% static 'images/usability-testing.svg' %}" class="card-img-top" alt="..." width="200" height="200">
                     <h5 class="card-title mt-3">Testing</h5>
                     <ul class="list-group list-group-flush flex-grow-1">
                         <li class="list-group-item">Pytest</li>
@@ -125,8 +125,8 @@
             </div>
             <!-- Card 8: Visualization -->
             <div class="col">
-                <div class="card h-100 text-center">
-                    <img src="..." class="card-img-top" alt="..." width="200" height="200">
+                <div class="card text-center">
+                    <img src="{% static 'images/visualization.svg' %}" class="card-img-top" alt="..." width="200" height="200">
                     <h5 class="card-title mt-3">Visualization</h5>
                     <ul class="list-group list-group-flush flex-grow-1">
                         <li class="list-group-item">Tableau</li>
