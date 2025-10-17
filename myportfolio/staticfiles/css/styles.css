@@ -6,6 +6,7 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   font-size: 34px;
+  overflow-x: hidden;
 }
 .homepage-section {
   background-color: white;
@@ -46,6 +47,61 @@ body {
 .homepage-content p {
   font-size: 1.25rem;
   line-height: 1.6;
+}
+/* Custom Bootstrap card styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.card {
+  background: linear-graient(145deg, #fffef7, #fff3cd);
+  border: 1px solid #f5d76e;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(145deg, #fff9e0, #fff3b0);
+}
+.card img {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 0 auto 1rem auto;
+  padding-top: 2rem;
+}
+.card .list-group {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-y: auto;
+  max-height: 220px;
+}
+.card ul.list-group {
+  flex-grow: 1;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 18pt;
+  min-height: 3rem;
+}
+.list-group-item {
+  font-size: 15pt;
+  padding: 0.4rem 0.4rem;
 }
 /* Styling for large screens */
 @media (min-width: 1920px) {

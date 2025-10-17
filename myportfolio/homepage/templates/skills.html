@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+<!-- Required Static Tag -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skills page of portfolio website showcasing Amber Czerwinski.">
+    <meta name="keywords" content="amber,czerwinski,portfolio,skills,python,django,html,css">
+    <!-- Page Title -->
+    <title>Skills page</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid py-4 px-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-lg-xl-4 row-cols-xxl-4 g-4">
+
+            <!-- Card 1: Programming Languages -->
+            <div class="col">
+                <div class="card text-center">
+                    <img src="{% static 'images/programming.svg' %}" class="card-img-top" alt="..." width="200" height="200">
+                    <h5 class="card-title mt-3">Programming Languages</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">Python</li>
+                        <li class="list-group-item">Java</li>
+                        <li class="list-group-item">Scala</li>
+                        <li class="list-group-item">SQL</li>                                                                                                                           
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 2: Web & Frameworks -->
+            <div class="col">
+                <div class="card text-center">
+                    <img src="{% static 'images/web-developer.svg' %}" class="card-img-top" alt="..." width="200" height="200">
+                    <h5 class="card-title mt-3">Web & Frameworks</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">HTML</li>
+                        <li class="list-group-item">CSS</li>
+                        <li class="list-group-item">Django</li>
+                        <li class="list-group-item">React</li>
+                        <li class="list-group-item">PHP</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 3: Cloud & Infrastructure -->
+            <div class="col">
+                <div class="card text-center">
+                    <img src="{% static 'images/cloud-hosting.svg' %}" class="card-img-top" alt="..." width="200" height="200">
+                    <h5 class="card-title mt-3">Cloud & Infrastructure</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">AWS Services (Lambda, CloudFormation, RDS, S3, CloudFront,
+                            EKS, CloudWatch, Step Functions, API Gateway, Glue, EC2, ECS, EKS, EMR)
+                        </li>
+                        <li class="list-group-item">Kubernetes</li>
+                        <li class="list-group-item">CI/CD Pipelines</li>
+                         <li class="list-group-item">Hadoop</li>                       
+                    </ul>
+                </div>
+            </div> 
+
+            <!-- Card 4: Data Engineering & Databases -->
+            <div class="col">
+                <div class="card text-center">
+                    <img src="{% static 'images/spreadsheet.svg' %}" class="card-img-top" alt="..." width="200" height="200">
+                    <h5 class="card-title mt-3">Data Engineering & Databases</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">NoSQL (MongoDB, DynamoDB)</li>
+                        <li class="list-group-item">Snowflake</li>
+                        <li class="list-group-item">Spark</li>                                              
+                        <li class="list-group-item">DDL</li>
+                        <li class="list-group-item">JSON</li>
+                        <li class="list-group-item">YAML</li>                        
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 5: APIs & Development Tools -->
+            <div class="col">
+                <div class="card text-center">
+                    <img src="{% static 'images/development.svg' %}" class="card-img-top" alt="..." width="200" height="200">
+                    <h5 class="card-title mt-3">APIs and Development Tools</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">RESTful APIs</li>
+                        <li class="list-group-item">Postman</li>
+                        <li class="list-group-item">Spring Boot</li>
+                        <li class="list-group-item">Jupyter</li>
+                        <li class="list-group-item">Visual Studio Code</li>
+                        <li class="list-group-item">Eclipse</li>
+                         <li class="list-group-item">IntelliJ IDEA</li>
+                        <li class="list-group-item">Spyder</li>                                                                                                                     
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 6: Collaboration-->
+            <div class="col">
+                <div class="card text-center">
+                    <img src="{% static 'images/collaboration.svg' %}" class="card-img-top" alt="..." width="200" height="200">
+                    <h5 class="card-title mt-3">Collaboration</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">Git</li>
+                        <li class="list-group-item">Bitbucket</li>
+                        <li class="list-group-item">Jira</li>
+                        <li class="list-group-item">Confluence</li>
+                        <li class="list-group-item">ServiceNow</li>                                                                                        
+                    </ul>
+                </div>
+            </div>
+            <!-- Card 7: Testing -->
+            <div class="col">
+                <div class="card text-center">
+                    <img src="{% static 'images/usability-testing.svg' %}" class="card-img-top" alt="..." width="200" height="200">
+                    <h5 class="card-title mt-3">Testing</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">Pytest</li>
+                        <li class="list-group-item">Unittest</li>
+                        <li class="list-group-item">Integration Testing</li>
+                        <li class="list-group-item">Regression Testing</li>                                                                                       
+                    </ul>
+                </div>
+            </div>
+            <!-- Card 8: Visualization -->
+            <div class="col">
+                <div class="card text-center">
+                    <img src="{% static 'images/visualization.svg' %}" class="card-img-top" alt="..." width="200" height="200">
+                    <h5 class="card-title mt-3">Visualization</h5>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item">Tableau</li>
+                        <li class="list-group-item">MS Office Services</li>                                                                                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
