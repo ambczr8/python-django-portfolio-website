@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+<!-- Required Static Tag -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page of portfolio website showcasing Amber Czerwinski.">
+    <meta name="keywords" content="amber,czerwinski,portfolio,contact,python,django,html,css">
+    <!-- Page Title -->
+    <title>Contact page</title>
+</head>
+<body>
+    {% block content %}
+    <div class="d-flex flex-column justify-content-center align-items-center min-vh-100 text-center">
+        <h2 class="mb-4 fw-semibold">Connect With Me!</h2>
+
+        <div class="d-flex justify-content-center gap-5 flex-wrap">
+            <!-- Email -->
+            <a href="mailto:am.cz538@aol.com" class="contact-btn email">
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+
+            <a href="https://github.com/ambczr8" class="contact-btn github" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+            <!-- LinkedIn -->
+            <a href="www.linkedin.com/in/amberczerwinski" class="contact-btn linkedin" target="_blank">
+                <i class="bi bi-linkedin"></i>
+            </a>                            
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

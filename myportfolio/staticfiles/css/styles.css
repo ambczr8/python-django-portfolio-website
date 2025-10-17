@@ -103,6 +103,34 @@ body {
   font-size: 15pt;
   padding: 0.4rem 0.4rem;
 }
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  font-size: 2rem;
+  border-radius: 50%;
+  color: #fff;
+  background: linear-graient(145deg, #fffef7, #fff3cd);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.contact-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.contact-btn.email {
+  background: linear-gradient(180deg, #fff9e6, #fff2b0);
+}
+.contact-btn.github {
+  background: linear-gradient(180deg, #fff9e6, #fff2b0);
+}
+.contact-btn.linkedin {
+  background: linear-gradient(180deg, #fff9e6, #fff2b0);
+}
+
 /* Styling for large screens */
 @media (min-width: 1920px) {
   .homepage-content {
