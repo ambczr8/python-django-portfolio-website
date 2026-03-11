@@ -16,6 +16,10 @@ RUN set -ex && \
     rm -rf /root/.cache/
 COPY . /code
 
+WORKDIR /code/myportfolio
+
+RUN python manage.py collectstatic --noinput
+
 EXPOSE 8000
 
-CMD ["gunicorn", "--bind", ":8000", "--workers", "2", "hello_django.wsgi"]
+CMD ["gunicorn", "--bind", ":8000", "--workers", "2", "myportfolio.wsgi"]

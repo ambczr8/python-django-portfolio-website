@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure--)a*(43h$2vrj$*uv24!655w1+tw+z&x@-r4(vr4-wt#hk1y4+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'python-django-portfolio-website-bitter-sky-825.fly.dev',
+    'buildsbyambs.dev',
+    'www.buildsbyambs.dev',
+]
 
 
 # Application definition
@@ -42,6 +46,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
